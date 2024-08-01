@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+#canvas {
+    border-radius: 8px;
+    border: 8px solid #929697;
+    background-color: #d0c0b0;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    font-size: 54px;
+    border-radius: 24px;
+    border: 8px solid #929697;
+    background-color: #d0c0b0;
+}
