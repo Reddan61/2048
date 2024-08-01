@@ -2,16 +2,20 @@
     "name": "2048",
     "version": "1.0.0",
     "description": "",
+    "homepage": "https://reddan61.github.io/2048/",
     "main": "index.js",
     "scripts": {
         "build": "cross-env NODE_ENV=production  webpack",
-        "dev": "cross-env NODE_ENV=development webpack serve"
+        "dev": "cross-env NODE_ENV=development webpack serve",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "cross-env": "^7.0.3",
         "css-loader": "^7.1.2",
+        "gh-pages": "^6.1.1",
         "html-webpack-plugin": "^5.6.0",
         "prettier": "^3.3.3",
         "style-loader": "^4.0.0",
